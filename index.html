@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô BigBang Theory</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pedra-papel-tesoura-lagarto-Spock</h1>
+
+        <div class="buttons">
+            <label class="label-rock"> Pedra: <button class="rock" onclick="playerHuman('pedra')"> &#x1F5FF; </button> </label>
+            <label class="label-paper"> Papel: <button class="paper" onclick="playerHuman('papel')"> &#x1F4C4; </button> </label>
+            <label class="label-scissors"> Tesoura: <button class="scissors" onclick="playerHuman('tesoura')"> &#x2702; </button> </label>
+            <label class="label-lizard"> Lagarto: <button class="lizard" onclick="playerHuman('lagarto')"> &#x1F98E; </button></label>
+            <label class="label-spock"> Spock: <button class="spock" onclick="playerHuman('spock')"> &#x1F596; </button></label>
+        </div>
+        <p class="your-points">Sua pontuação: <span id="human-score">0</span> </p>
+        <p class="cp-points">Pontuação do Computador: <span id="machine-score">0</span> </p>
+        <p>Sua escolha:
+        <p class="player-choice"></p>
+        </p>
+        <p>Escolha da máquina:
+        <p class="machine-choice"></p>
+        </p>
+        <p>Resultado:
+        <p class="result"></p>
+        </p>
+        <button class="rules" onclick="gameRules()">Regras!</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
